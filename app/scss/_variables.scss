@@ -28,9 +28,11 @@ $white: hsl(0, 0%, 100%); //(Text)
 $darkToggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 
 //Font Size
+$font-xl: 3.75rem; //60px
 $font-lg: 1.625rem; //26px
 $font-med: 1.125rem; // 18px
 $font-heading: 0.875rem; //14px
+$font-sm: 0.8125rem; //13px
 
 //Font Family
 $font-inter: 'Inter', sans-serif;

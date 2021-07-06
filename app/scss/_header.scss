@@ -1,5 +1,12 @@
 .header {
-    background-color: $veryPaleBlue;
+    &::before {
+        content: "";
+        background-color: $veryPaleBlue;
+        width: 100%;
+        height: 16rem;
+        position: absolute;
+        z-index: -1;
+    }
 
     &__nav {
         @include breakpoint-up(medium) {
@@ -87,13 +94,5 @@
                 }
             }
         }
-    }
-
-    &__menu {
-        
-    }
-
-    &__item {
-
     }
 }

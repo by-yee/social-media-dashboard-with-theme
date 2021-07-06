@@ -1,0 +1,101 @@
+.summary {
+    &__menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5625rem;
+        padding-top: 0.3125rem;
+        text-align: center;
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.75rem;
+        }
+    }
+
+    &__item {
+        background-color: $lightGrayishBlue;
+        padding: 1.25rem;
+        border-radius: 6px;
+        border-top-style: solid;
+        border-top-width: 0.3rem;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #e2e4f1;
+        }
+
+        &.facebook {
+            border-top-color: $facebook;
+        }
+
+        &.twitter {
+            border-top-color: $twitter;
+        }
+
+        &.instagram {
+            position: relative;
+            border-color: $lightGrayishBlue;
+            
+            &::before {
+                content: '';
+                background: linear-gradient(to right, #fdc468, #df4996);
+                width: 100%;
+                position: absolute;
+                height: 0.3rem;
+                top: -2%;
+                left: 0%;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+        }
+
+        &.youtube {
+            border-top-color: $youTube;
+        }
+
+        &--icon {
+            @include flex-display(row, center, center);
+            padding: 0.625rem;
+
+            img {
+                padding-right: 0.5rem;
+            }
+        }
+
+        &--name {
+            font-size: $font-sm;
+            font-weight: bold;
+            color: $darkGrayishBlue;
+        }
+
+        &--count {
+            padding-top: 0.625rem;
+            font-size: $font-xl;
+            font-weight: bold;
+            color: $veryDarkBlue;
+        }
+
+        &--followers {
+            font-size: $font-heading;
+            color: $darkGrayishBlue;
+            letter-spacing: 0.32rem;
+            text-transform: uppercase;
+        }
+
+        &--number {
+            @include flex-display(row, center, center);
+            padding-top: 1.875rem;
+            padding-bottom: 0.625rem;
+            font-size: $font-sm;
+            font-weight: bold;
+
+            img {
+                padding-right: 0.3125rem;
+            }
+        }
+    }
+}

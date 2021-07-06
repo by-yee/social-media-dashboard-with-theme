@@ -7,6 +7,10 @@ html {
     box-sizing: inherit;
 }
 
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,30 +21,22 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1, h2{
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: $font-inter;
 }
 
 h1 {
-
-}
-
-h2 {
     font-size: $font-lg;
     color: $veryDarkBlue;
     line-height: 1.7;
 }
 
-h3 {
+h2 {
     font-size: $font-heading;
     color: $darkGrayishBlue;
     // margin-bottom: ;
-}
-
-h4 {
-
 }
 
 // Spacing
@@ -68,4 +64,12 @@ h4 {
             padding-left: 9.375rem;
         }
     }
+}
+
+.green {
+    color: $limeGreen;
+}
+
+.red {
+    color: $brightRed;
 }

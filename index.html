@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./dist/style.css">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="./dist/style.css">
+  <title>Frontend Mentor | [Social Media Dashboard]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -26,11 +26,11 @@
       </div>
 
       <div class="header__theme">
-        <h2>Dark Mode</h2>
         <label class="header__switch">
-          <input type="checkbox">
+          <input type="checkbox" class="toggle" checked>
           <span class="header__switch--slider round"></span>
         </label>
+        <h2 class="header__label">Dark Mode</h2>
       </div>
     </div>
   </header>
@@ -81,78 +81,134 @@
         <div class="summary__item--count">8239</div>
         <div class="summary__item--followers">Subscribers</div>
         <div class="summary__item--number red">
-          <img src="./images/icon-down.svg" alt="Icon up">
+          <img src="./images/icon-down.svg" alt="Icon down">
           <div>144 Today</div>
         </div>
       </a>
     </div>
   </section>
 
-  <section class="overview">
-    <h1>Overview - Today</h1>
+  <section class="overview container container--pall">
+    <h1 class="overview__title">Overview - Today</h1>
     <div class="overview__menu">
-      <div class="overview__item">
-        Page Views
-        87
-        3%
-      </div>
+      <a href="#" class="overview__item">
+        <div class="overview__item--top">
+          <h2>Page Views</h2>
+          <img src="./images/icon-facebook.svg" alt="Icon Facebook">
+        </div>
+        <div class="overview__item--bottom">
+          <div class="overview__item--count">87</div>
+          <div class="overview__item--number green">
+            <img src="./images/icon-up.svg" alt="Icon up">
+            <div>3%</div>
+          </div>
+        </div>
+      </a>
       
-      <div class="overview__item">
-        Likes
-        52
-        2%
-      </div>
+      <a href="#" class="overview__item">
+        <div class="overview__item--top">
+          <h2>Likes</h2>
+          <img src="./images/icon-facebook.svg" alt="Icon Facebook">
+        </div>
+        <div class="overview__item--bottom">
+          <div class="overview__item--count">52</div>
+          <div class="overview__item--number red">
+            <img src="./images/icon-down.svg" alt="Icon down">
+            <div>2%</div>
+          </div>
+        </div>
+      </a>
 
-      <div class="overview__item">
-        Likes
-        5462
-        2257%
-      </div>
+      <a href="#" class="overview__item">
+        <div class="overview__item--top">
+          <h2>Likes</h2>
+          <img src="./images/icon-instagram.svg" alt="Icon Instagram">
+        </div>
+        <div class="overview__item--bottom">
+          <div class="overview__item--count">5462</div>
+          <div class="overview__item--number green">
+            <img src="./images/icon-up.svg" alt="Icon up">
+            <div>2257%</div>
+          </div>
+        </div>
+      </a>
       
-      <div class="overview__item">
-        Profile Views
-        52k
-        1375%
-      </div>
+      <a href="#" class="overview__item">
+        <div class="overview__item--top">
+          <h2>Profile Views</h2>
+          <img src="./images/icon-instagram.svg" alt="Icon Instagram">
+        </div>
+        <div class="overview__item--bottom">
+          <div class="overview__item--count">52k</div>
+          <div class="overview__item--number green">
+            <img src="./images/icon-up.svg" alt="Icon up">
+            <div>1375%</div>
+          </div>
+        </div>
+      </a>
       
-      <div class="overview__item">
-        Retweets
-        117
-        303%
-      </div>
+      <a href="#" class="overview__item">
+        <div class="overview__item--top">
+          <h2>Retweets</h2>
+          <img src="./images/icon-twitter.svg" alt="Icon Twitter">
+        </div>
+        <div class="overview__item--bottom">
+          <div class="overview__item--count">117</div>
+          <div class="overview__item--number green">
+            <img src="./images/icon-up.svg" alt="Icon up">
+            <div>303%</div>
+          </div>
+        </div>
+      </a>
       
-      <div class="overview__item">
-        Likes
-        507
-        553%
-      </div>
+      <a href="#" class="overview__item">
+        <div class="overview__item--top">
+          <h2>Likes</h2>
+          <img src="./images/icon-twitter.svg" alt="Icon Twitter">
+        </div>
+        <div class="overview__item--bottom">
+          <div class="overview__item--count">507</div>
+          <div class="overview__item--number green">
+            <img src="./images/icon-up.svg" alt="Icon up">
+            <div>553%</div>
+          </div>
+        </div>
+      </a>
       
-      <div class="overview__item">
-        Likes
-        107
-        19%
-      </div>
+      <a href="#" class="overview__item">
+        <div class="overview__item--top">
+          <h2>Likes</h2>
+          <img src="./images/icon-youtube.svg" alt="Icon Youtube">
+        </div>
+        <div class="overview__item--bottom">
+          <div class="overview__item--count">107</div>
+          <div class="overview__item--number red">
+            <img src="./images/icon-down.svg" alt="Icon down">
+            <div>19%</div>
+          </div>
+        </div>
+      </a>
      
-      <div class="overview__item">
-        Total Views
-        1407
-        12%
-      </div>
+      <a href="#" class="overview__item">
+        <div class="overview__item--top">
+          <h2>Total Views</h2>
+          <img src="./images/icon-youtube.svg" alt="Icon Youtube">
+        </div>
+        <div class="overview__item--bottom">
+          <div class="overview__item--count">1407</div>
+          <div class="overview__item--number red">
+            <img src="./images/icon-down.svg" alt="Icon down">
+            <div>12%</div>
+          </div>
+        </div>
+      </a>
     </div>
-  </section>
-  
-
-  
-
-  
-
-
-
-  
-  
+  </section>  
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script src="./app/js/script.js"></script>
 </body>
 </html>

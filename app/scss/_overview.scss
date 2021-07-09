@@ -1,0 +1,60 @@
+.overview {
+    padding-top: 0.25rem;
+
+    &__title {
+        padding-bottom: 1.125rem;
+        color: var(--textOne);
+    }
+
+    &__menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.75rem;
+        }
+    }
+
+    &__item {
+        @include flex-display(column, space-between, normal);
+        gap: 1.375rem;
+        background-color: var(--cardBackground);
+        padding: 1.25rem 1.875rem 1.25rem 1.25rem;
+        border-radius: 6px;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: var(--cardHover);
+        }
+
+        &--top {
+            @include flex-display(row, space-between, center);
+        }
+
+        &--bottom {
+            @include flex-display(row, space-between, flex-end);
+        }
+
+        &--count {
+            font-size: $font-30;
+            font-weight: $weight-bold;
+            color: var(--textTwo);
+        }
+
+        &--number {
+            @include flex-display(row, normal, center);
+            font-size: $font-13;
+            font-weight: $weight-bold;
+
+            img {
+                padding-right: 0.3125rem;
+            }
+        }
+    }
+}

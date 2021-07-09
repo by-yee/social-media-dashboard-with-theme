@@ -17,7 +17,7 @@
     }
 
     &__item {
-        background-color: $lightGrayishBlue;
+        background-color: var(--cardBackground);
         padding: 1.25rem;
         border-radius: 6px;
         border-top-style: solid;
@@ -25,7 +25,7 @@
         transition: background-color 0.3s ease-in-out;
 
         &:hover {
-            background-color: #e2e4f1;
+            background-color: var(--cardHover);
         }
 
         &.facebook {
@@ -38,7 +38,7 @@
 
         &.instagram {
             position: relative;
-            border-color: $lightGrayishBlue;
+            border-color: var(--cardBackground);
             
             &::before {
                 content: '';
@@ -67,21 +67,21 @@
         }
 
         &--name {
-            font-size: $font-sm;
-            font-weight: bold;
-            color: $darkGrayishBlue;
+            font-size: $font-13;
+            font-weight: $weight-bold;
+            color:  var(--textOne);
         }
 
         &--count {
             padding-top: 0.625rem;
-            font-size: $font-xl;
-            font-weight: bold;
-            color: $veryDarkBlue;
+            font-size: $font-60;
+            font-weight: $weight-bold;
+            color: var(--textTwo);
         }
 
         &--followers {
-            font-size: $font-heading;
-            color: $darkGrayishBlue;
+            font-size: $font-14;
+            color: var(--textOne);
             letter-spacing: 0.32rem;
             text-transform: uppercase;
         }
@@ -90,8 +90,8 @@
             @include flex-display(row, center, center);
             padding-top: 1.875rem;
             padding-bottom: 0.625rem;
-            font-size: $font-sm;
-            font-weight: bold;
+            font-size: $font-13;
+            font-weight: $weight-bold;
 
             img {
                 padding-right: 0.3125rem;

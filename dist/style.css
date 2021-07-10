@@ -9,6 +9,7 @@ html {
   --cardBackground: hsl(227, 47%, 96%);
   --textOne: hsl(228, 12%, 44%);
   --textTwo: hsl(230, 17%, 14%);
+  --textOverview: hsl(228, 12%, 44%);
   --cardHover: #e2e4f1;
 }
 
@@ -20,6 +21,7 @@ html.dark-theme {
   --cardBackground: hsl(228, 28%, 20%);
   --textOne: hsl(228, 34%, 66%);
   --textTwo: hsl(0, 0%, 100%);
+  --textOverview: hsl(0, 0%, 100%);
   --cardHover: #31374f;
 }
 
@@ -371,8 +373,11 @@ h2 {
 }
 
 .overview__title {
+  font-weight: bold;
+  font-size: 1.625rem;
+  line-height: 1.7;
   padding-bottom: 1.125rem;
-  color: var(--textOne);
+  color: var(--textOverview);
 }
 
 .overview__menu {

@@ -27,6 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![Project Screenshot](./images/project_screenshot.png)
+![Project Screenshot White Theme](./images/project_screenshot_white.png)
 
 
 ### Links
